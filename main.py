@@ -13,21 +13,18 @@ for i in range(0, 20):
     tuple_for_the_list = (red, green, blue)
     list_of_colors.append(tuple_for_the_list)
 
-print(list_of_colors)
-
 timmy_the_painter = Turtle()
 screen = Screen()
 screen.colormode(255)
 timmy_the_painter.penup()
 timmy_the_painter.goto(-250,-250)
-timmy_the_painter.speed(200)
+timmy_the_painter.speed(500)
 
 
 def draw_line():
     x = 0
     while x < 10:
         random_color = random.randrange(0, 20)
-        print(random_color)
         timmy_the_painter.pencolor(list_of_colors[random_color])
         timmy_the_painter.pendown()
         timmy_the_painter.dot(20)
