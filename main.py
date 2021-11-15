@@ -19,6 +19,7 @@ screen.colormode(255)
 timmy_the_painter.penup()
 timmy_the_painter.goto(-250,-250)
 timmy_the_painter.speed(500)
+timmy_the_painter.hideturtle()
 
 
 def draw_line():
